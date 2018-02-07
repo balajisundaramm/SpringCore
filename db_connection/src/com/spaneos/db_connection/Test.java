@@ -17,14 +17,7 @@ public class Test {
 	DbConfiguration dbConfiguration;
 
 	public static void main(String[] args) {
-		System.err.println("Im alrigh before");
 		ApplicationContext context = new AnnotationConfigApplicationContext("com.spaneos");
-		System.out.println(context);
-		System.out.println("Bean names: ");
-
-		// System.out.println("context.getBean(\"\") " +
-		// context.getBean("dbConnection"));
-
 		DbConnectionUtill connection = (DbConnectionUtill) context.getBean("dbConnection");
 		System.out.println(connection.getConnection());
 	}

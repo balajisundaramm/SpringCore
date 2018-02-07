@@ -14,19 +14,6 @@ public class TestEmployee {
 		
 		ApplicationContext context = new FileSystemXmlApplicationContext("src/com/spaneos/employee/spring.xml");
 		Employee employee=(Employee)context.getBean("employee");
-		/*Address address=(Address)context.getBean("Address.class");
-		address.setStreet("First Cross");
-		address.setCity("Rajaji nagar");
-		address.setState("Bangalore");*/
-		
-		/*Employee employee=(Employee)context.getBean("Employee.class");
-		employee.setAddress(address);
-		employee.setEmployeeName("Ravi");
-		employee.setEmail("ravi@gmail.com");
-		employee.setEmployeeNo("123");
-		employee.setSalary(750000);
-		employee.setMobile("8124641817");*/
-		
 		System.out.println("Employee details : "+employee);
 		
 	}
