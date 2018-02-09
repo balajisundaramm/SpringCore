@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.spaneos.product;
+
+import java.io.File;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @author spaneos
+ *
+ */
+public class Main {
+	public static void main(String[] args) {
+//		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+//		ProductBean bean = (ProductBean) context.getBean("product");
+//		System.out.println(bean);
+//		System.out.println("context " + context);
+		
+		System.out.println("Exist test: " +  new File("/spring_product/src/com/spaneos/product/spring.xml").exists());
+	}
+}

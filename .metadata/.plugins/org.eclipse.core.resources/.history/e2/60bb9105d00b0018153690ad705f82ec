@@ -1,0 +1,71 @@
+/**
+ * 
+ */
+package com.spaneos.db_connection;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.cglib.proxy.Callback;
+import org.springframework.cglib.proxy.Factory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+/**
+ * @author spaneos
+ *
+ */
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext("DbConfiguration.class");
+		System.out.println("Bean names: " + 
+				   Arrays.toString(context.getBeanNamesForType(DbConfiguration.class)));
+		Factory factory= new Factory() {
+			
+			@Override
+			public void setCallbacks(Callback[] arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void setCallback(int arg0, Callback arg1) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public Object newInstance(Class[] arg0, Object[] arg1, Callback[] arg2) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Object newInstance(Callback[] arg0) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Object newInstance(Callback arg0) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Callback[] getCallbacks() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public Callback getCallback(int arg0) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
+	//. getBean(DbConfiguration.class);
+		DbConnectionUtill connection=(DbConnectionUtill) context.getBean("dbConnection");
+		System.out.println(connection);
+	}
+}

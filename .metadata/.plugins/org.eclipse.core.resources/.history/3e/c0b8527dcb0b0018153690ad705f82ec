@@ -1,0 +1,4 @@
+driverName=com.mysql.jdbc.Driver
+URL = jdbc:mysql://localhost/ShoppingCart
+UID = "root";
+ "123";

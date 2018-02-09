@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.spaneos.product;
+
+/**
+ * @author balaji
+ *
+ */
+public class ProductBean {
+	private String productId;
+	private String productName;
+	private String productPrice;
+	
+	
+}

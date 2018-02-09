@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package db_connection;
+
+/**
+ * @author balaji
+ *
+ */
+public class DbConnectionUtill {
+	private String driverName;
+	private String url;
+	private String userId;
+	private String password;
+}

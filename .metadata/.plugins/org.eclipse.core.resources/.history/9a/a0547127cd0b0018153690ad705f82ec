@@ -1,0 +1,24 @@
+package com.spaneos.db_connection;
+
+import org.omg.CORBA.Environment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+/**
+ * @author balji
+ *
+ */
+@Configuration
+@PropertySource("classpath:/properties.txt")
+public class DbConfiguration {
+	
+	@Autowired
+		Environment environment;
+	
+	@Bean(name="dbConnection")
+	public DbConnectionUtill getDbConnction(){
+		return new DbConnectionUtill();
+	}
+}

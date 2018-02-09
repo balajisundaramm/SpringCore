@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.spaneos.product;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @author spaneos
+ *
+ */
+public class Main {
+	public static void main(String[] args) {
+		ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
+		ProductBean bean=(ProductBean)context.getBean("productBean");
+		System.out.println(bean);
+	}
+}

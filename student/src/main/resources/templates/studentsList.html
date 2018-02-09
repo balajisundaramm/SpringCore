@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Registration</title>
+<style>
+body {
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/registration_form">Register</a></li>
+				<li><a href="/view">View all students</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div th:if="${students} == null">
+			<h4>There are no students!!!</h4>
+		</div>
+		<div th:if="${students} != null">
+			<table class="table">
+				<caption>List of Students</caption>
+				<thead>
+					<tr>
+						<th>Registration number</th>
+						<th>Name</th>
+						<th>Date of Birth</th>
+						<th>Branch</th>
+						<th>Edit</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="student : ${students}">
+						<td th:text="${student.regNo}"></td>
+						<td th:text="${student.name}"></td>
+						<td th:text="${student.dob}"></td>
+						<td th:text="${student.branch}"></td>
+						<td><a th:href="@{|/student/${student.regNo}|}">Edit</a></td>
+						<td><form action="#"
+								th:action="@{|/student/${student.regNo}|}" th:method="delete">
+								<button class="btn btn-primary">Delete</button>
+							</form></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

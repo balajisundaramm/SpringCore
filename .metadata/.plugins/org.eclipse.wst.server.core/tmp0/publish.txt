@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Feb 07 15:59:10 IST 2018
+org.eclipse.jst.jee.server\:/binary\:/home/spaneos/Balaji/Projects/SpringCore/product/WebContent/WEB-INF/lib/org.springframework.web_4.0.2.20140223-RELEASE.jar=WEB-INF/lib/org.springframework.web_4.0.2.20140223-RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:/home/spaneos/Balaji/Projects/SpringCore/product_details/WebContent/WEB-INF/lib/org.springframework.web_4.0.2.20140223-RELEASE.jar=WEB-INF/lib/org.springframework.web_4.0.2.20140223-RELEASE.jar

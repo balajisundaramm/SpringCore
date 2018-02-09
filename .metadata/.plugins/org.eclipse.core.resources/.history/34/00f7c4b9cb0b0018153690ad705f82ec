@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.spaneos.db_connection;
+
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @author balji
+ *
+ */
+@Configuration
+public class DbConfiguration {
+
+}

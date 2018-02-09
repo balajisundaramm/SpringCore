@@ -1,0 +1,31 @@
+package com.spaneos.db_connection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author balji
+ *
+ */
+//@PropertySource("classpath:/db_connection/src/com/spaneos/db_connection/dbConnection.properties")
+@Component
+@Configuration
+
+public class DbConfiguration {
+
+	@Autowired
+	Environment environment;
+
+	@Bean(name = "dbConnection")
+	public DbConnectionUtill getDbConnction() {
+		DbConnectionUtill connection = new DbConnectionUtill();
+//		connection.setDriverName(environment.getProperty("DRIVER_Name"));
+//		connection.setUserId(environment.getProperty("USER_ID"));
+//		connection.setUrl(environment.getProperty("URL"));
+//		connection.setPassword(environment.getProperty("PASSWORD"));
+		return connection;
+	}
+}

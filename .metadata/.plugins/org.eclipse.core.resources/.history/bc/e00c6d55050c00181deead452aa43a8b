@@ -1,0 +1,22 @@
+package com.spaneos.rest.controllers;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@EnableAutoConfiguration
+public class HomeController {
+	
+	public HomeController() {
+		System.err.println("Controller ");
+	}
+
+	@RequestMapping("/")
+	public String showHome(Model model) {
+		System.out.println("Controller--> show home()");
+		return "home";
+	}
+	
+}

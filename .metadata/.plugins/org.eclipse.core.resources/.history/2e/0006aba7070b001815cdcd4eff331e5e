@@ -1,0 +1,10 @@
+package com.spaneos.product;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HomeController {
+	public String showHome() {
+		return "home";
+	}
+}

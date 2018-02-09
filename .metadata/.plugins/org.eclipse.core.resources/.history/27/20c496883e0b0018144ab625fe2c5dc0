@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee" class="com.spaneos.employee.Employee">
+		<property name="employeeNo" value="emp123"></property>
+		<property name="employeeName" value="Ravi"></property>
+		<property name="salary" value="25000"></property>
+		<property name="email" value="ravi@gamil.com"></property>
+		<property name="mobile" value="8124581812"></property>
+		<property name="address" value="address"></property>
+	</bean>
+
+	<bean id="address" class="com.spaneos.employee.Address">
+		<property name="street" value="First cross"></property>
+		<property name="city" value="Rajaji nagar"></property>
+		<property name="state" value="Bangalore"></property>
+
+	</bean>
+
+</beans>

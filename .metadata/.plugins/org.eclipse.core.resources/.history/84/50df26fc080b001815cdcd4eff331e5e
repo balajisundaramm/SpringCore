@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.spaneos.product;
+
+import org.springframework.stereotype.Component;
+
+/**
+ * @author balaji
+ *
+ */
+@Component
+public class ProductServiceImpl {
+	
+}

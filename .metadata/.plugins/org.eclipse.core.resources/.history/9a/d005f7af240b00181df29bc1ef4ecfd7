@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.spaneos.product;
+
+/**
+ * @author spaneos
+ *
+ */
+public class ProductConfiguration {
+	/**
+	 * 
+	 * @return
+	 */
+	public ProductBean getProduct(){
+		return new ProductBean();
+	}
+}

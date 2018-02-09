@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.spaneos.employee;
+
+/**
+ * @author spaneos
+ *
+ */
+public class Employee {
+	private String employeeNo;
+	private String employeeName;
+	private double salary;
+	private String email;
+	private Address address;
+}

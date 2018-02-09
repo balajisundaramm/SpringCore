@@ -1,0 +1,10 @@
+package com.spaneos.rest.model;
+
+import java.util.Date;
+
+public class Student {
+	private int regNo;
+	private String name;
+	private String branch;
+	private Date dob;
+}

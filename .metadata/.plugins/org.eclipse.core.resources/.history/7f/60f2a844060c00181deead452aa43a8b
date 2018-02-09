@@ -1,0 +1,9 @@
+package com.spaneos.rest.service;
+
+public class StudentServiceImpl implements StudentService {
+
+	public StudentServiceImpl() {
+		System.out.println("In service");
+	}
+
+}

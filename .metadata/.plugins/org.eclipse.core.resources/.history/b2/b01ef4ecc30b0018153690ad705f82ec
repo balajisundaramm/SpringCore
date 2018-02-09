@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package db_connection;
+
+/**
+ * @author spaneos
+ *
+ */
+public class DbConnectionUtill {
+
+}

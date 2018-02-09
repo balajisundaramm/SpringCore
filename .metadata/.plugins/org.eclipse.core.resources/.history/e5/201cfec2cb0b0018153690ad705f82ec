@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.spaneos.db_connection;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+/**
+ * @author balji
+ *
+ */
+@Configuration
+@PropertySource("classpath:/properties.txt")
+public class DbConfiguration {
+
+}

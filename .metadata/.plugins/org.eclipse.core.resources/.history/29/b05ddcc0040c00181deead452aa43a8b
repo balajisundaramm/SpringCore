@@ -1,0 +1,20 @@
+package com.spaneos.rest.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	
+	public HomeController() {
+		System.out.println("Controller ");
+	}
+
+	@RequestMapping("/")
+	public String showHome(Model model) {
+		System.out.println("Controller--> show home()");
+		return "home";
+	}
+	
+}

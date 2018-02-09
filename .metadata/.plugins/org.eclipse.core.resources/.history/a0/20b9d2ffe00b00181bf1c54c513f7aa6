@@ -1,0 +1,9 @@
+package com.spaneos.db_connection;
+
+import org.springframework.context.annotation.ComponentScan;
+
+
+@ComponentScan(basePackages = { "com.spaneos" })
+public class AppConfiguration {
+
+}

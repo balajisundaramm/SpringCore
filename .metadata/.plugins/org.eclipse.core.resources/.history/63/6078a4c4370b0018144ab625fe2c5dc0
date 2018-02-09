@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.spaneos.employee;
+
+/**
+ * @author spaneos
+ *
+ */
+public class EmployeeConfiguration {
+	
+	public Employee getEmployee(){
+		return new Employee();
+	}
+	
+	
+}

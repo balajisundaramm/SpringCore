@@ -1,0 +1,4 @@
+DRIVER_Name="com.mysql.jdbc.Driver"
+URL="jdbc:mysql://localhost/ShoppingCart"
+USER_ID="root"
+PASSWORD="123"
